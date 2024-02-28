@@ -1,0 +1,22 @@
+
+@keyframes underlineAnimation {
+    0% {
+      width: 0;
+    }
+    % {
+      width: 100%;
+    }
+  }
+  
+  .hover\:after\:underline-animation:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black; 
+    animation: underlineAnimation 0.3s ease-in-out; 
+  }
+  
